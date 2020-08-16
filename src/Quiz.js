@@ -14,7 +14,7 @@ class Quiz extends Component {
       <div>
         {quizData.quiz_questions.map((data, index) => (
           <div key={index} className="QuizQuestion">
-            <h3 ke>{data.instruction_text}</h3>
+            {data.instruction_text}
           </div>
         ))}
       </div>
