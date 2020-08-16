@@ -8,13 +8,15 @@ class Quiz extends Component {
     super(props);
 
     this.state = {
-      quiz_position: -1,
+      quiz_position: 1,
     };
   }
   render() {
     return (
       <div>
-        <QuizQuestion quiz_question={quizData.quiz_questions} />
+        <QuizQuestion
+          quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}
+        />
       </div>
     );
   }
